@@ -1,4 +1,4 @@
-# Neural_Network_Charity_Analysis
+# Neural Network Charity Analysis
 
 ## Overview
 We received a CSV containing more than 34,000 organizations from Alphabet Soup’s business team, that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization. Using machine learning and neural networks, we’ll use the features in the provided dataset to help Beks create a binary classifier that is capable of predicting whether applicants will be successful if funded by Alphabet Soup.
@@ -158,4 +158,13 @@ Features 'EIN', and 'IS_SUCCESSFUL' are removed from the input data.
     
 
 ## Summary
-Summary: Summarize the overall results of the deep learning model. Include a recommendation for how a different model could solve this classification problem, and explain your recommendation.
+
+
+Model|Accuracy|Loss|Layers
+-----|--------|----|------
+ 0| 72.5% | 56.34% | 2
+ 1| 77.99% | 61.87% | 2
+ 2| 77.92% | 53.69% | 4
+ 3| 78.17% | 45.38% | 4
+
+Based on the summary of results shown above we can recommend using a model that has 3 or 4 hidden layers and uses all features for input data. Since by adding 'NAME' feature that was discarded in model0 the accuracy % jumped from 72% - 77%. Also having more layers has decreased the loss %. Further trail and error can be used in finding out what other features could be dropped.
